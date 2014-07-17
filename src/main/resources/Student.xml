@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+        <students>
+    <student id="001">
+        <lastname>Ivanov</lastname>
+        <firstname>Ivan</firstname>
+        <bithday>01/03/1995</bithday>
+        <adress>
+            <city>Karagandy</city>
+            <street>Mukanova</street>
+            <build>44</build>
+            <flat>45</flat>
+        </adress>
+        <email>ivan@gmail.com</email>
+        <group>IS-12-2</group>
+    </student>
+
+    <student id="0323">
+        <lastname>Georko</lastname>
+        <firstname>Thomas</firstname>
+        <bithday>01/03/1978</bithday>
+        <adress>
+            <city>Karagandy</city>
+            <street>Satybaldina</street>
+            <build>45</build>
+            <flat>65</flat>
+        </adress>
+        <email>ivan@gmail.com</email>
+        <group>GD-02-2</group>
+    </student>
+
