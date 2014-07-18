@@ -1,22 +1,8 @@
 <?xml version="1.0"?>
-<library>
+
     <books>
         <book>
-            <id>4494</id>
-            <book:title>Dreams</book:title>
-            <authors>
-            <author>
-                <id>4556</id>
-                <lastname>Nick</lastname>
-                <firstname>Edison</firstname>
-            </author>
-                <author>
-                    <id>5656</id>
-                    <lastname>Leonard</lastname>
-                    <firstname>Edison</firstname>
-                </author>
-            </authors>
-            <genre>Crime</genre>
+           <genre>Crime</genre>
             <publicationdate>1/12/76</publicationdate>
             <vol>3</vol>
             <quantityofpages>456</quantityofpages>
@@ -24,7 +10,7 @@
         </book>
         <book>
             <id>003</id>
-            <book:title>Jump</book:title>
+            <title>Jump</title>
             <author>
                 <lastname>Alexandr</lastname>
                 <firstname>Frolov</firstname>

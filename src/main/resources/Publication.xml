@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+    <publication>
+    <id>4494</id>
+    <title>Dreams</title>
+        <type>Book</type>
+        <authors>
+            <author>
+                <id>4556</id>
+                <lastname>Nick</lastname>
+                <firstname>Edison</firstname>
+            </author>
+            <author>
+                <id>5656</id>
+                <lastname>Leonard</lastname>
+                <firstname>Edison</firstname>
+            </author>
+        </authors>
+
+    </publication>
+
