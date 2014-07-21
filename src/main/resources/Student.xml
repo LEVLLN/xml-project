@@ -1,30 +1,35 @@
 <?xml version="1.0"?>
-        <students>
-    <student id="001">
+<students xmlns="http://www.example.com/students"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.example.com/students students.xsd">
+
+    <student id="74765">
         <lastname>Ivanov</lastname>
         <firstname>Ivan</firstname>
         <bithday>01/03/1995</bithday>
-        <adress>
+        <address>
             <city>Karagandy</city>
-            <street>Mukanova</street>
+            <street>Strreeet</street>
             <build>44</build>
             <flat>45</flat>
-        </adress>
+        </address>
         <email>ivan@gmail.com</email>
         <group>IS-12-2</group>
+        <education>Бакалавриат</education>
     </student>
 
     <student id="0323">
         <lastname>Georko</lastname>
         <firstname>Thomas</firstname>
         <bithday>01/03/1978</bithday>
-        <adress>
+        <address>
             <city>Karagandy</city>
             <street>Satybaldina</street>
             <build>45</build>
             <flat>65</flat>
-        </adress>
+        </address>
         <email>ivan@gmail.com</email>
         <group>GD-02-2</group>
-    </student>
+        <education>Магистратура</education>
 
+</student>
