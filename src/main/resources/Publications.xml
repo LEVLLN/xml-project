@@ -1,0 +1,9 @@
+<pub:publications xmlns:pub="http://www.example.com/publications">
+  <!--1 or more repetitions:-->
+  <publication id="434">
+    <title>string</title>
+    <price>1.5E2</price>
+    <dateofpublication>1994-01-01</dateofpublication>
+    <genre>Biography</genre>
+  </publication>
+</pub:publications>

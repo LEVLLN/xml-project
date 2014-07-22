@@ -3,3 +3,5 @@ target/
 *.iml
 *.class
 *.log
+students.xsd
+Student.xml

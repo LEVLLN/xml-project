@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<students xmlns="http://www.example.com/students"
+<st:students xmlns:st="http://www.example.com/students"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.example.com/students students.xsd">
+       xsi:schemaLocation="http://www.example.com/students XSD/students.xsd">
 
     <student id="74765">
-        <lastname>Ivanov</lastname>
+        <lastname>ergfdj</lastname>
         <firstname>Ivan</firstname>
         <bithday>01/03/1995</bithday>
         <address>
@@ -19,8 +19,9 @@
     </student>
 
     <student id="0323">
-        <lastname>Georko</lastname>
+
         <firstname>Thomas</firstname>
+        <lastname>Georko</lastname>
         <bithday>01/03/1978</bithday>
         <address>
             <city>Karagandy</city>
@@ -33,3 +34,4 @@
         <education>Магистратура</education>
 
 </student>
+    </st:students>
