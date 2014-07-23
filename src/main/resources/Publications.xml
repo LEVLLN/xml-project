@@ -1,9 +1,17 @@
-<pub:publications xmlns:pub="http://www.example.com/publications">
-  <!--1 or more repetitions:-->
-  <publication id="434">
-    <title>string</title>
-    <price>1.5E2</price>
-    <dateofpublication>1994-01-01</dateofpublication>
-    <genre>Biography</genre>
-  </publication>
+<?xml version="1.0"?>
+<pub:publications xmlns:pub="http://www.example.com/publications"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.example.com/publications Publications.xsd">
+<publication id="">
+    <title></title>
+    <date></date>
+    <genre></genre>
+    <authors>
+        <author id="">
+            <firstname></firstname>
+            <lastname></lastname>
+        </author>
+    </authors>
+</publication> 
+
 </pub:publications>

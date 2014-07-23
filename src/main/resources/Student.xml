@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <st:students xmlns:st="http://www.example.com/students"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.example.com/students XSD/students.xsd">
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.example.com/students students.xsd">
 
     <student id="74765">
         <lastname>ergfdj</lastname>
@@ -33,5 +33,5 @@
         <group>GD-02-2</group>
         <education>Магистратура</education>
 
-</student>
-    </st:students>
+    </student>
+</st:students>

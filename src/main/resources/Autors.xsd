@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            >
+    <xsd:include schemaLocation="Author.xsd"/>
+    <xsd:element name="authors" type="authorsListType"/>
+
+    <xsd:complexType name="authorsListType">
+        <xsd:sequence>
+            <xsd:element name="author" type="authorsType" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+</xsd:schema>

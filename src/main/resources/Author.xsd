@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.example.com/authorType"
+            xmlns="http://www.example.com/authorType">
+
+
+    <xsd:complexType name="authorsType">
+        <xsd:sequence>
+            <xsd:element name="firstname" type="xsd:string"/>
+            <xsd:element name="lastname" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:int" use="required"/>
+    </xsd:complexType>
+</xsd:schema>

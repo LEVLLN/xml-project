@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           >
+
+
+    <xsd:simpleType name="genre">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Fantastic"/>
+            <xsd:enumeration value="Utopia"/>
+            <xsd:enumeration value="Anti-Utopia"/>
+            <xsd:enumeration value="Romance"/>
+            <xsd:enumeration value="Story"/>
+            <xsd:enumeration value="Epos"/>
+            <xsd:enumeration value="Biography"/>
+            <xsd:enumeration value="Autobiography"/>
+            <xsd:enumeration value="History"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
