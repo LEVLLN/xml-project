@@ -10,16 +10,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for publicationsListType complex type.
+ * <p>Java class for publicationListType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="publicationsListType">
+ * &lt;complexType name="publicationListType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="publication" type="{}publicationType" maxOccurs="unbounded"/>
+ *         &lt;element name="publication" type="{http://www.example.com/publications}publicationType" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,10 +29,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "publicationsListType", propOrder = {
+@XmlType(name = "publicationListType", namespace = "http://www.example.com/publications", propOrder = {
     "publication"
 })
-public class PublicationsListType {
+public class PublicationListType {
 
     @XmlElement(required = true)
     protected List<PublicationType> publication;

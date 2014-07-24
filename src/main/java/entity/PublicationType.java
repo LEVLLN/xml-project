@@ -21,11 +21,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="date" type="{}dateType"/>
- *         &lt;element name="genre" type="{}genre"/>
- *         &lt;element name="authors" type="{}authorsListType"/>
+ *         &lt;element name="date" type="{http://www.example.com/publications}dateType"/>
+ *         &lt;element name="genre" type="{http://www.example.com/publications}genreType"/>
+ *         &lt;element name="authors" type="{http://www.example.com/publications}authorsListType"/>
  *       &lt;/sequence>
- *       &lt;attribute name="id" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
+ *       &lt;attribute name="publicationId" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -34,7 +34,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "publicationType", propOrder = {
+@XmlType(name = "publicationType", namespace = "http://www.example.com/publications", propOrder = {
     "title",
     "date",
     "genre",
@@ -49,11 +49,11 @@ public class PublicationType {
     protected XMLGregorianCalendar date;
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
-    protected Genre genre;
+    protected GenreType genre;
     @XmlElement(required = true)
     protected AuthorsListType authors;
-    @XmlAttribute(name = "id", required = true)
-    protected int id;
+    @XmlAttribute(name = "publicationId", required = true)
+    protected int publicationId;
 
     /**
      * Gets the value of the title property.
@@ -108,10 +108,10 @@ public class PublicationType {
      * 
      * @return
      *     possible object is
-     *     {@link Genre }
+     *     {@link GenreType }
      *     
      */
-    public Genre getGenre() {
+    public GenreType getGenre() {
         return genre;
     }
 
@@ -120,10 +120,10 @@ public class PublicationType {
      * 
      * @param value
      *     allowed object is
-     *     {@link Genre }
+     *     {@link GenreType }
      *     
      */
-    public void setGenre(Genre value) {
+    public void setGenre(GenreType value) {
         this.genre = value;
     }
 
@@ -152,19 +152,19 @@ public class PublicationType {
     }
 
     /**
-     * Gets the value of the id property.
+     * Gets the value of the publicationId property.
      * 
      */
-    public int getId() {
-        return id;
+    public int getPublicationId() {
+        return publicationId;
     }
 
     /**
-     * Sets the value of the id property.
+     * Sets the value of the publicationId property.
      * 
      */
-    public void setId(int value) {
-        this.id = value;
+    public void setPublicationId(int value) {
+        this.publicationId = value;
     }
 
 }

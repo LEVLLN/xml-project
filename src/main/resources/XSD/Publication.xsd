@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding ="UTF-8"?>
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://www.example.com/publication"
-            xmlns="http://www.example.com/publication">
+            targetNamespace="http://www.example.com/publications"
+            xmlns="http://www.example.com/publications">
+
     <xsd:include schemaLocation="DateType.xsd"/>
     <xsd:include schemaLocation="Genre.xsd"/>
-    <xsd:include schemaLocation="Autors.xsd"/>
+    <xsd:include schemaLocation="Authors.xsd"/>
 
+
+    <xsd:element name="publication" type="publicationType"/>
     <xsd:complexType name="publicationType">
         <xsd:sequence>
             <xsd:element name="title" type="xsd:string"/>
             <xsd:element name="date" type="dateType"/>
-            <xsd:element name="genre" type="genre"/>
+            <xsd:element name="genre" type="genreType"/>
             <xsd:element name="authors" type="authorsListType"/>
         </xsd:sequence>
-        <xsd:attribute name="id" type="xsd:int" use="required"/>
+        <xsd:attribute name="publicationId" type="xsd:int" use="required"/>
     </xsd:complexType>
 </xsd:schema>

@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="firstname" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
- *       &lt;attribute name="id" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
+ *       &lt;attribute name="authorId" use="required" type="{http://www.w3.org/2001/XMLSchema}int" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "authorsType", propOrder = {
+@XmlType(name = "authorsType", namespace = "http://www.example.com/publications", propOrder = {
     "firstname",
     "lastname"
 })
@@ -40,8 +40,8 @@ public class AuthorsType {
     protected String firstname;
     @XmlElement(required = true)
     protected String lastname;
-    @XmlAttribute(name = "id", required = true)
-    protected int id;
+    @XmlAttribute(name = "authorId", required = true)
+    protected int authorId;
 
     /**
      * Gets the value of the firstname property.
@@ -92,19 +92,19 @@ public class AuthorsType {
     }
 
     /**
-     * Gets the value of the id property.
+     * Gets the value of the authorId property.
      * 
      */
-    public int getId() {
-        return id;
+    public int getAuthorId() {
+        return authorId;
     }
 
     /**
-     * Sets the value of the id property.
+     * Sets the value of the authorId property.
      * 
      */
-    public void setId(int value) {
-        this.id = value;
+    public void setAuthorId(int value) {
+        this.authorId = value;
     }
 
 }

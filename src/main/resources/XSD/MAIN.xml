@@ -1,0 +1,28 @@
+<pub:publications xmlns:pub="http://www.example.com/publications">
+  <!--1 or more repetitions:-->
+  <publication publicationId="3">
+    <title>string</title>
+    <date>0001-01-01</date>
+    <genre>Biography</genre>
+    <authors>
+      <!--1 or more repetitions:-->
+      <author authorId="3">
+        <firstname>string</firstname>
+        <lastname>string</lastname>
+      </author>
+    </authors>
+  </publication>
+
+    <publication publicationId="54">
+        <title>Grbr</title>
+        <date>1994-01-22</date>
+        <genre>Epos</genre>
+        <authors>
+            <author authorId="43">
+                <firstname>Lol</firstname>
+                <lastname>Lalka</lastname>
+            </author>
+        </authors>
+    </publication>
+
+</pub:publications>

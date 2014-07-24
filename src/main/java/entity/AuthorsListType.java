@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="author" type="{}authorsType" maxOccurs="unbounded"/>
+ *         &lt;element name="author" type="{http://www.example.com/publications}authorsType" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "authorsListType", propOrder = {
+@XmlType(name = "authorsListType", namespace = "http://www.example.com/publications", propOrder = {
     "author"
 })
 public class AuthorsListType {

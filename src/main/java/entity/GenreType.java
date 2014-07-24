@@ -7,12 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for genre.
+ * <p>Java class for genreType.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="genre">
+ * &lt;simpleType name="genreType">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="Fantastic"/>
  *     &lt;enumeration value="Utopia"/>
@@ -28,9 +28,9 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType(name = "genre")
+@XmlType(name = "genreType", namespace = "http://www.example.com/publications")
 @XmlEnum
-public enum Genre {
+public enum GenreType {
 
     @XmlEnumValue("Fantastic")
     FANTASTIC("Fantastic"),
@@ -52,7 +52,7 @@ public enum Genre {
     HISTORY("History");
     private final String value;
 
-    Genre(String v) {
+    GenreType(String v) {
         value = v;
     }
 
@@ -60,8 +60,8 @@ public enum Genre {
         return value;
     }
 
-    public static Genre fromValue(String v) {
-        for (Genre c: Genre.values()) {
+    public static GenreType fromValue(String v) {
+        for (GenreType c: GenreType.values()) {
             if (c.value.equals(v)) {
                 return c;
             }
